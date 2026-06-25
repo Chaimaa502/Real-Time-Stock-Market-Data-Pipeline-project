@@ -232,7 +232,7 @@ SNOWFLAKE_DATABASE=STOCKS_MDS
 SNOWFLAKE_SCHEMA=COMMON
 ```
 
-> ⚠️ Never push the real `.env` file to GitHub. Only publish `.env.example`.
+
 
 ---
 
