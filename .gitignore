@@ -1,0 +1,63 @@
+# ============================================================
+# Secrets and environment variables
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# dbt credentials
+profiles.yml
+**/profiles.yml
+
+# ============================================================
+# Python virtual environments
+# ============================================================
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ============================================================
+# dbt generated folders
+# ============================================================
+target/
+**/target/
+
+dbt_packages/
+**/dbt_packages/
+
+logs/
+**/logs/
+
+# Optional dbt local folders
+dbt_stocks/dbt_stocks/analyses/
+dbt_stocks/dbt_stocks/seeds/
+dbt_stocks/dbt_stocks/snapshots/
+dbt_stocks/dbt_stocks/tests/
+dbt_stocks/dbt_stocks/macros/
+
+# ============================================================
+# Airflow generated files
+# ============================================================
+airflow.cfg
+airflow.db
+webserver_config.py
+
+# ============================================================
+# Docker local files
+# ============================================================
+postgres_data/
+minio_data/
+
+# ============================================================
+# IDE and system files
+# ============================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

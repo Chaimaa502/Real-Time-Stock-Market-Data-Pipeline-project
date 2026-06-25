@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: STOCKS_MDS
+    schema: COMMON
+
+    tables:
+      - name: bronze_stocks_raw
+        identifier: BRONZE_STOCKS_RAW
+        description: "Raw stock quote JSON records loaded from MinIO by Airflow."
