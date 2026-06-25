@@ -213,7 +213,7 @@ dbt transforms data across three layers:
 
 ## Environment Variables
 
-Create a `.env` file at the root of the project based on `.env.example`:
+Create a `.env` file at the root of the project :
 
 ```env
 # Finnhub API
