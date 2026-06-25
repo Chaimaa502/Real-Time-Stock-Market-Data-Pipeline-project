@@ -245,41 +245,35 @@ git clone <your-repository-url>
 cd RealTimeFinHub
 ```
 
-### 2. Configure environment variables
 
-```bash
-copy .env.example .env
-# Then fill in your real credentials
-```
-
-### 3. Install Python dependencies
+### 2. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Start the infrastructure
+### 3. Start the infrastructure
 
 ```bash
 cd infra
 docker compose up -d
 ```
 
-### 5. Run the Kafka producer
+### 4. Run the Kafka producer
 
 ```bash
 cd producer
 python producer.py
 ```
 
-### 6. Run the Kafka consumer
+### 5. Run the Kafka consumer
 
 ```bash
 cd consumer
 python consumer.py
 ```
 
-### 7. Access Airflow and trigger the DAG
+### 6. Access Airflow and trigger the DAG
 
 ```
 http://localhost:8080
@@ -287,7 +281,7 @@ http://localhost:8080
 
 Run the `minio_to_snowflake` DAG from the Airflow UI.
 
-### 8. Run dbt transformations
+### 7. Run dbt transformations
 
 ```bash
 cd dbt_stocks
@@ -296,23 +290,6 @@ dbt run
 
 ---
 
-## Security Notes
-
-The following files and folders must never be pushed to GitHub:
-
-```text
-.env
-profiles.yml
-venv/
-logs/
-target/
-dbt_packages/
-__pycache__/
-```
-
-Use `.env.example` and `profiles.yml.example` to share safe configuration templates.
-
----
 
 ## Future Improvements
 
